@@ -17,4 +17,21 @@ void main() {
   print('p = $p');
   print('s = $s');
   print('squares = ${s ~/ 1}');
+
+  // Завдання 2: Оператори порівняння
+  // 1) Створіть змінну number.
+  // 2) Перевірте:
+  // Чи більше число за 50.
+  // Чи менше число за 100.
+  // Чи ділиться число на 5 без залишку.
+  // 3) Виведіть всі результати.
+
+  int number = 25;
+  bool isGreaterThan50 = number > 50;
+  bool isLessThan100 = number < 100;
+  bool isDivisibleBy5 = number % 5 == 0;
+
+  print('Is the number greater than 50? = $isGreaterThan50');
+  print('Is the number less than 100? = $isLessThan100');
+  print('Is the number divisible by 5? = $isDivisibleBy5');
 }
