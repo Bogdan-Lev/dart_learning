@@ -34,4 +34,20 @@ void main() {
   print('Is the number greater than 50? = $isGreaterThan50');
   print('Is the number less than 100? = $isLessThan100');
   print('Is the number divisible by 5? = $isDivisibleBy5');
+
+  // Завдання 3: Логічні оператори
+  // 1) Створіть змінні hasMoney і isStoreOpen (типу bool).
+  // 2) Перевірте:
+  // Чи можна зробити покупку (якщо є гроші і магазин відкритий).
+  // Чи потрібно почекати (якщо магазин закритий або немає грошей).
+  // 3) Використайте оператори &&, ||, !.
+
+  bool hasMoney = true;
+  bool isStoreOpen = false;
+
+  bool canMakePurchase = hasMoney && !isStoreOpen;
+  bool needToWait = isStoreOpen || !hasMoney;
+
+  print('Can make purchase? = $canMakePurchase');
+  print('Need to wait? = $needToWait');
 }
