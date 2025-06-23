@@ -50,4 +50,20 @@ void main() {
 
   print('Can make purchase? = $canMakePurchase');
   print('Need to wait? = $needToWait');
+
+  //   Завдання 4: Тернарний оператор
+  // 1) Створіть змінну temperature.
+  // 2) Використайте тернарний оператор, щоб визначити:
+  // Якщо більше 25 — “Тепло”.
+  // Якщо менше або дорівнює 25 — “Прохолодно”.
+  // 3) Потім створіть ще один тернарний оператор:
+  // Якщо менше 10 — вивести “Дуже холодно”.
+
+  int temperature = 20;
+  String weather = temperature > 25 ? 'Warm' : 'Cool';
+  String coldWeather = temperature < 10 ? 'VeryCold' : '';
+  print('Weather: $weather');
+  if (coldWeather.isNotEmpty) {
+    print(coldWeather);
+  }
 }
