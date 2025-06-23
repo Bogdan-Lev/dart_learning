@@ -151,10 +151,12 @@ void main() {
     default:
       print('Invalid day number');
   }
+
   // Завдання 8: Цикли for
   // 1) Виведіть всі числа від 1 до 10.
   // 2) Виведіть тільки парні числа.
   // 3) Обчисліть суму чисел від 1 до 10.
+
   int sum = 0;
   for (int i = 1; i <= 10; i++) {
     print(i);
@@ -164,4 +166,19 @@ void main() {
     sum += i;
   }
   print('Sum of numbers from 1 to 10: $sum');
+
+  // Завдання 9: Цикл while
+  // 1) Почніть із числа 10.
+  // 2) Виводьте числа, зменшуючи їх на 1, поки не досягнете 0.
+  // 3) Якщо число парне — вивести “Парне число: …”, якщо непарне — “Непарне число: …”.
+
+  int counter = 10;
+  while (counter >= 0) {
+    if (counter % 2 == 0) {
+      print('Even counter: $counter');
+    } else {
+      print('Odd counter: $counter');
+    }
+    counter--;
+  }
 }
