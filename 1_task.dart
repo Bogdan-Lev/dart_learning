@@ -115,4 +115,40 @@ void main() {
   } else {
     print('Invalid score');
   }
+  // Завдання 7: Конструкція switch statement
+  // 1) Створіть змінну dayNumber від 1 до 7.
+  // 2) Використайте switch, щоб вивести:
+  // Понеділок, Вівторок, …, Неділя.
+  // 3) Якщо день не від 1 до 7 — вивести “Невірний номер дня”.
+  // 4) Додатково: для вихідних (6, 7) вивести “Вихідний день 🎉”.
+
+  int dayNumber = 7;
+
+  switch (dayNumber) {
+    case 1:
+      print('Monday');
+      break;
+    case 2:
+      print('Tuesday');
+      break;
+    case 3:
+      print('Wednesday');
+      break;
+    case 4:
+      print('Thursday');
+      break;
+    case 5:
+      print('Friday');
+      break;
+    case 6:
+      print('Saturday');
+      print('Weekend day');
+      break;
+    case 7:
+      print('Sunday');
+      print('Weekend');
+      break;
+    default:
+      print('Invalid day number');
+  }
 }
