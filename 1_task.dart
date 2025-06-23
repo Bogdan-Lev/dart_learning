@@ -151,4 +151,17 @@ void main() {
     default:
       print('Invalid day number');
   }
+  // Завдання 8: Цикли for
+  // 1) Виведіть всі числа від 1 до 10.
+  // 2) Виведіть тільки парні числа.
+  // 3) Обчисліть суму чисел від 1 до 10.
+  int sum = 0;
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+    if (i % 2 == 0) {
+      print('Even number: $i');
+    }
+    sum += i;
+  }
+  print('Sum of numbers from 1 to 10: $sum');
 }
